@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
 import React from 'react'
-import { Col,Card,Row } from 'react-bootstrap'
+import { Col,Card,Row,Container } from 'react-bootstrap'
 import prod1 from '../../images/download.jpg'
 import deleteicon from '../../images/delete.png'
 import man from '../../images/man.jpeg'
 const OwnerAllStudentCard = () => {
   return (
-    <div>
+    <Container>
             <div className=" d-flex "> 
                     <div className='admin-content-text'> الصفحة الشخصية</div>
                     <img className='me-4' src={man} style={{width:"5%",borderRadius:"50%"}}/>
@@ -20,7 +20,7 @@ const OwnerAllStudentCard = () => {
                     </Col>
                     <Col xs="6" className="d-flex justify-content-end">
                         <div className="d-flex mx-2">
-                        <Link to="/editstudent" style={{textDecoration:"none"}}>
+                        <Link to="/editteacher" style={{textDecoration:"none"}}>
                            
 
                             <p className="item-delete-edit"> تعديل</p>
@@ -69,7 +69,7 @@ const OwnerAllStudentCard = () => {
                     </Col>
                 </Row>
             </div>
-        </div>
+        </Container>
   )
 }
 

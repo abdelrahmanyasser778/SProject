@@ -30,7 +30,11 @@ const AdminSideBar = () => {
                         اعرض درجات الطالب
                     </div>
                 </Link>
-        
+                <Link to="/teacher/teacherdata" style={{ textDecoration: 'none' }}>
+                    <div className="admin-side-text my-1 border-bottom p-2 mx-auto text-center">
+                        بيانات المعلم
+                    </div>
+                </Link>
             </div>
         </div>
     )

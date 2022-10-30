@@ -24,11 +24,7 @@ const AdminAddStudent = () => {
                 className="input-form d-block mt-3 px-3"
                 placeholder="رقم ولي الامر"
             />
-            <input
-                type="number"
-                className="input-form d-block mt-3 px-3"
-                placeholder="سعر المنتج"
-            />
+
 
         </Col>
     </Row>

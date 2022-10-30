@@ -32,7 +32,9 @@ import CartPage from "./Pages/CartPage";
 import ChoosePayMethoud from "./Pages/ChoosePayMethoud";
 import TeacherCourseContentPage from "./Pages/Teacher/TeacherCourseContentPage";
 import StudentCourseBoughtContentPage from "./Pages/Student/StudentCourseBoughtContent.Page";
-
+import StudentEditPage from "./Pages/Student/StudentEditPage";
+import TeacherDataPage from "./Pages/Teacher/TeacherDataPage";
+import TeacherEditDataPage from './Pages/Teacher/TeacherEditDataPage'
 function App() {
   return (
     <div className="App" >
@@ -63,6 +65,9 @@ function App() {
         <Route path="/order/paymethod" element={<ChoosePayMethoud/>}/>
         <Route path="/teachercoursecontent" element={<TeacherCourseContentPage/>} />
         <Route path="/studentcoursecontent" element={<StudentCourseBoughtContentPage/>}/>
+        <Route path="/editstudent" element={<StudentEditPage/>}/>
+        <Route path="/teacher/teacherdata" element={<TeacherDataPage/>}/>
+        <Route path="/editteacher" element={<TeacherEditDataPage/>}/>
           </Routes>
        </BrowserRouter>
        
