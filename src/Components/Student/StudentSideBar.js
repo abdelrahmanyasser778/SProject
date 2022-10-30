@@ -26,6 +26,12 @@ const OwnerSideBar = () => {
                         الدورات المسجلة  
                     </div>
         </Link>
+        
+        <Link to="/student/prevpay" style={{ textDecoration: 'none' }}>
+                    <div className="admin-side-text my-1 border-bottom p-2 mx-auto text-center">
+                         المشتريات السابقة  
+                    </div>
+        </Link>
 
     
 

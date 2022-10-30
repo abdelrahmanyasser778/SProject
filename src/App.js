@@ -36,6 +36,7 @@ import StudentEditPage from "./Pages/Student/StudentEditPage";
 import TeacherDataPage from "./Pages/Teacher/TeacherDataPage";
 import TeacherEditDataPage from './Pages/Teacher/TeacherEditDataPage'
 import ConfirmDataPage from "./Pages/ConfirmDataPage";
+import StudentPrevPayPage from "./Pages/Student/StudentPrevPayPage";
 function App() {
   return (
     <div className="App" >
@@ -70,6 +71,7 @@ function App() {
         <Route path="/teacher/teacherdata" element={<TeacherDataPage/>}/>
         <Route path="/editteacher" element={<TeacherEditDataPage/>}/>
         <Route path="/confirmdata" element={<ConfirmDataPage/>}/>
+        <Route path="/student/prevpay" element={<StudentPrevPayPage/>}/>
           </Routes>
        </BrowserRouter>
        
