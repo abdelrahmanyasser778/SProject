@@ -18,6 +18,7 @@ const RegisterTeacherDetails = () => {
         type="text"
         className="user-input my-3 text-center mx-auto"
       />
+      
       <input
         placeholder="كلمه السر..."
         type="password"
