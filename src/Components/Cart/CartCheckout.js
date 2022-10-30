@@ -15,10 +15,10 @@ const CartCheckout = () => {
                 </div>
                 <div className="product-price d-inline w-100 my-3  border">800 جنية</div>
                 <Link
-                    to="/order/paymethod"
+                    to="/confirmdata"
                     style={{ textDecoration: "none" }}
                     className="product-cart-add  d-inline ">
-                    <button className="product-cart-add w-100 px-2" style={{backgroundColor:"#099B93"}}> اتمام الشراء</button>
+                    <button className="product-cart-add w-100 px-2" style={{backgroundColor:"#099B93"}}> اتمام البيانات</button>
                 </Link>
             </Col>
         </Row>

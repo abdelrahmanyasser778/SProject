@@ -35,6 +35,7 @@ import StudentCourseBoughtContentPage from "./Pages/Student/StudentCourseBoughtC
 import StudentEditPage from "./Pages/Student/StudentEditPage";
 import TeacherDataPage from "./Pages/Teacher/TeacherDataPage";
 import TeacherEditDataPage from './Pages/Teacher/TeacherEditDataPage'
+import ConfirmDataPage from "./Pages/ConfirmDataPage";
 function App() {
   return (
     <div className="App" >
@@ -68,6 +69,7 @@ function App() {
         <Route path="/editstudent" element={<StudentEditPage/>}/>
         <Route path="/teacher/teacherdata" element={<TeacherDataPage/>}/>
         <Route path="/editteacher" element={<TeacherEditDataPage/>}/>
+        <Route path="/confirmdata" element={<ConfirmDataPage/>}/>
           </Routes>
        </BrowserRouter>
        
