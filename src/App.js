@@ -30,6 +30,8 @@ import TeacherShowGradePage from "./Pages/Teacher/TeacherShowGradePage";
 import AllCorsesPage from "./Pages/AllCorsesPage";
 import CartPage from "./Pages/CartPage";
 import ChoosePayMethoud from "./Pages/ChoosePayMethoud";
+import TeacherCourseContentPage from "./Pages/Teacher/TeacherCourseContentPage";
+import StudentCourseBoughtContentPage from "./Pages/Student/StudentCourseBoughtContent.Page";
 
 function App() {
   return (
@@ -59,6 +61,8 @@ function App() {
         <Route path="/allcorses" element={<AllCorsesPage/>}/>
         <Route path="/cart" element={<CartPage/>}/>
         <Route path="/order/paymethod" element={<ChoosePayMethoud/>}/>
+        <Route path="/teachercoursecontent" element={<TeacherCourseContentPage/>} />
+        <Route path="/studentcoursecontent" element={<StudentCourseBoughtContentPage/>}/>
           </Routes>
        </BrowserRouter>
        

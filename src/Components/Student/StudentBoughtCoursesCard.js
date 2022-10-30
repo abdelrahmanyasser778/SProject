@@ -15,7 +15,8 @@ const OwnerAllCoursesIhave = () => {
             backgroundColor: "#FFFFFF",
         }}>
 
-        <Link to="/course/:id" style={{ textDecoration: "none" }}>
+        <Link to="/studentcoursecontent" style={{ textDecoration: "none" }}>
+
             <Card.Img style={{ height: "228px", width: "100%" }} src={prod1} />
             <Card.Body>
                 <Card.Title>

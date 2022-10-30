@@ -20,8 +20,10 @@ const AdminAllProductsCard = () => {
                         <div className="d-inline item-delete-edit">تعديل</div>
                     </Col>
                 </Row>
-               
+                    <Link to="/teachercoursecontent">
+
                     <Card.Img style={{ height: "228px", width: "100%" }} src={prod1} />
+                    </Link>
                     <Card.Body>
                         <Card.Title>
                             <div className="card-title">
