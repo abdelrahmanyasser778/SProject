@@ -37,6 +37,9 @@ import TeacherDataPage from "./Pages/Teacher/TeacherDataPage";
 import TeacherEditDataPage from './Pages/Teacher/TeacherEditDataPage'
 import ConfirmDataPage from "./Pages/ConfirmDataPage";
 import StudentPrevPayPage from "./Pages/Student/StudentPrevPayPage";
+import MangerNumberOfStudentsPage from "./Pages/Manger/MangerNumberOfStudentsPage";
+import MangerNumberOfTeachersPage from "./Pages/Manger/MangerNumberOfTeachersPage";
+import MangerAcceptCoursePage from "./Pages/Manger/MangerAcceptCoursePage";
 function App() {
   return (
     <div className="App" >
@@ -72,6 +75,9 @@ function App() {
         <Route path="/editteacher" element={<TeacherEditDataPage/>}/>
         <Route path="/confirmdata" element={<ConfirmDataPage/>}/>
         <Route path="/student/prevpay" element={<StudentPrevPayPage/>}/>
+        <Route path="/manger/allstudents" element={<MangerNumberOfStudentsPage/>}/>
+        <Route path="/manger/allteachers" element ={<MangerNumberOfTeachersPage/>}/>
+        <Route path="/manger/acceptcourse" element={<MangerAcceptCoursePage/>}/>
           </Routes>
        </BrowserRouter>
        

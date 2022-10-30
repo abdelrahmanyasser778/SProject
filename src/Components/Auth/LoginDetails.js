@@ -38,6 +38,12 @@ const LoginDetails = () => {
                                  </span>
                                  </Link>
 
+                                 <Link to="/manger/allstudents" style={{textDecoration:"none"}}>
+                                    <span style={{cursor:"pointer",color:"#099B93"}}>
+                                الدخول مدير
+                                 </span>
+                                 </Link>
+
 
 
 
