@@ -1,7 +1,9 @@
 import React from 'react'
 import { Col,Card,Row } from 'react-bootstrap'
 import StudentAllCoursesCard from './StudentAllCoursesCard'
-
+import axios from 'axios'
+import OwnerAllCoursesCard from './StudentAllCoursesCard'
+import { useEffect , useState } from 'react'
 
 const OwnerAllData = () => {
   const [data , setData] = useState([]);
