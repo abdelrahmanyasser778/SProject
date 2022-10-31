@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Col,Card,Row } from 'react-bootstrap'
 import prod1 from '../../images/download.jpg'
-const StudentAllCoursesCard = () => {
+const StudentAllCoursesCard = ({img , name , price}) => {
   return (
     <Col xs="12" sm="6" md="5" lg="4" className="d-flex">
     <Card
@@ -16,11 +16,11 @@ const StudentAllCoursesCard = () => {
         }}>
 
         <Link to="/course/:id" style={{ textDecoration: "none" }}>
-            <Card.Img style={{ height: "228px", width: "100%" }} src={prod1} />
+            <Card.Img style={{ height: "228px", width: "100%" }} src={img} />
             <Card.Body>
                 <Card.Title>
                     <div className="card-title">
-                      اسم الدورة{" "}
+                      {name}
                     </div>
                 </Card.Title>
                 <Card.Text>
@@ -29,7 +29,7 @@ const StudentAllCoursesCard = () => {
                         <div className="d-flex">
                             <div className="card-currency mx-1">جنيه</div>
                             
-                            <div className="card-price">880</div>
+                            <div className="card-price">{price}</div>
                         </div>
                     </div>
                 </Card.Text>

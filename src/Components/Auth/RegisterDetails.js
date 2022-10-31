@@ -20,7 +20,7 @@ const RegisterDetails = () => {
           })
           .then(function (response) {
             console.log(response);
-            
+            window.location.replace("http://localhost:3000/login");
           })
           .catch(function (error) {
             console.log("error bad credentials");
