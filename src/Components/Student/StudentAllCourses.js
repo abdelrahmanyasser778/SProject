@@ -1,8 +1,7 @@
 import React from 'react'
 import { Col,Card,Row } from 'react-bootstrap'
-import OwnerAllCoursesCard from './StudentAllCoursesCard'
-import { useState , useEffect } from 'react'
-import axios from 'axios'
+import StudentAllCoursesCard from './StudentAllCoursesCard'
+
 
 const OwnerAllData = () => {
   const [data , setData] = useState([]);
