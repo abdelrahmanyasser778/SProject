@@ -12,7 +12,7 @@ const RegisterTeacherDetails = () => {
     const [phone,setPhone] = useState("");
 
     const REGISTER =()=>{
-        axios.post('https://lms.elingua.co/api/signup', {
+        axios.post('https://qudratqudratooooo.online/api/signup', {
             name,
             email,
             phone,

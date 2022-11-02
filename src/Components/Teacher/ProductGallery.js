@@ -4,10 +4,10 @@ import ImageGallery from "react-image-gallery";
 import Course from '../../images/12_6424f3f8-4a2f-48f9-b84b-fcf5a42c4000_480x480.webp'
 import LeftButton from './LeftButton';
 import RightButton from './RightButton';
-const ProductGallery = () => {
+const ProductGallery = ({img}) => {
     const images = [
         {
-            original: `${Course}`,
+            original: `https://qudratqudratooooo.online/${img}`,
         },
         {
             original: `${Course}`,

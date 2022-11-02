@@ -1,16 +1,39 @@
 import React from 'react'
 import { Row,Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { useEffect , useState } from 'react'
+import axios from 'axios'
 
-const ProductText = () => {
+const ProductText = ({title,shortdetails,about, price ,id}) => {
+
+const [data , setData] = useState([]);
+const token = localStorage.getItem("ACCESS_TOKEN")
+  const config = {
+    headers: { Authorization: `Bearer ${token}` }
+};
+
+
+  const ADD_TO_CART = () =>{
+    
+      axios.get(`https://qudratqudratooooo.online/api/add-to-cart/${id}`,config)
+      .then(function (response) {
+        setData(response.data.data)
+        console.log(response)
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
+
+
     return (
         <div>
       <Row className="mt-2">
-        <div className="cat-text" style={{color:"#099B93",fontSize:"30px",fontWeight:"bold"}}> دورة قدرات لفظي</div>
+        <div className="cat-text" style={{color:"#099B93",fontSize:"30px",fontWeight:"bold"}}> {title} </div>
       </Row>
       <Row>
         <Col md="8">
-          <div className="cat-title d-inline">تعتمد هذه الدورة بشكل كبير على تشكيل الطلاب على القدرات اللفظيه
+          <div className="cat-title d-inline">{shortdetails}
           </div>
         </Col>
       </Row>
@@ -39,25 +62,16 @@ const ProductText = () => {
       </Row>
       <Row className="mt-2">
         <Col md="10">
-          <div className="product-description d-inline">
-تعتمد هذه الدورة بشكل كبير على تشكيل الطلاب على القدرات اللفظيه 
-تعتمد هذه الدورة بشكل كبير على تشكيل الطلاب على القدرات اللفظيه
-تعتمد هذه الدورة بشكل كبير على تشكيل الطلاب على القدرات اللفظيه
-تعتمد هذه الدورة بشكل كبير على تشكيل الطلاب على القدرات اللفظيه
-تعتمد هذه الدورة بشكل كبير على تشكيل الطلاب على القدرات اللفظيه
-تعتمد هذه الدورة بشكل كبير على تشكيل الطلاب على القدرات اللفظيه
-تعتمد هذه الدورة بشكل كبير على تشكيل الطلاب على القدرات اللفظيه
-تعتمد هذه الدورة بشكل كبير على تشكيل الطلاب على القدرات اللفظيه
-تعتمد هذه الدورة بشكل كبير على تشكيل الطلاب على القدرات اللفظيه     
+          <div className="product-description d-inline">{about}
           </div>
         </Col>
       </Row>
       <Row className="mt-4">
         <Col md="12">
-          <div className="product-price d-inline px-3 py-3 border">800 جنية</div>
+          <div className="product-price d-inline px-3 py-3 border">{price} ريال</div>
           <Link to="/cart"  style={{ textDecoration: "none" }}>
 
-          <div className="product-cart-add px-3 py-3 d-inline mx-3" style={{backgroundColor:"#099B93"}}>اضف للعربة</div>
+          <div className="product-cart-add px-3 py-3 d-inline mx-3" onClick={()=>{ADD_TO_CART()}} style={{backgroundColor:"#099B93"}}>اضف للعربة</div>
           </Link>
         </Col>
       </Row>

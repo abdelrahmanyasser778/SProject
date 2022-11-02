@@ -46,8 +46,8 @@ const ChoosePayMethoud = () => {
 
             <Row>
                 <Col xs="12" className="d-flex justify-content-end">
-                    <div className="product-price d-inline   border"> رصيدك :1000 جنيه</div>
-                    <div className="product-price d-inline   border me-2">سعر الدورة :500 جنيه</div>
+                    <div className="product-price d-inline   border"> رصيدك :1000 ريال</div>
+                    <div className="product-price d-inline   border me-2">سعر الدورة :500 ريال</div>
                     <div className="product-cart-add px-3 pt-2 d-inline me-2" style={{backgroundColor:"#099B93"}}> اتمام الشراء</div>
                 </Col>
             </Row>

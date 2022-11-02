@@ -9,7 +9,7 @@ const LoginDetails = () => {
     const [password,setpassword] = useState("");
 
     const LOGIN =()=>{
-        axios.post('https://lms.elingua.co/api/login', {
+        axios.post('https://qudratqudratooooo.online/api/login', {
             email,
             password
           })

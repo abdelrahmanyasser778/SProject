@@ -34,7 +34,7 @@ const AdminAllProductsCard = () => {
                             <div className="d-flex justify-content-between">
                            
                                 <div className="d-flex">
-                                    <div className="card-currency mx-1">جنيه</div>
+                                    <div className="card-currency mx-1">ريال</div>
                                     <div className="card-price">880</div>
                                 </div>
                             </div>

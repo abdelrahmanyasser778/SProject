@@ -1,5 +1,5 @@
 import { Button } from "react-bootstrap";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes,useParams } from "react-router-dom";
 import AllPage from "./Pages/AllPage";
 
 import Footer from "./Components/Footer";
@@ -41,6 +41,7 @@ import MangerNumberOfStudentsPage from "./Pages/Manger/MangerNumberOfStudentsPag
 import MangerNumberOfTeachersPage from "./Pages/Manger/MangerNumberOfTeachersPage";
 import MangerAcceptCoursePage from "./Pages/Manger/MangerAcceptCoursePage";
 function App() {
+  let { id } = useParams();
   return (
     <div className="App" >
        <NavBar/>

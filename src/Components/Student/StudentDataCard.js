@@ -5,6 +5,7 @@ import prod1 from '../../images/download.jpg'
 import deleteicon from '../../images/delete.png'
 import man from '../../images/man.jpeg'
 const OwnerAllStudentCard = () => {
+    
   return (
     <div>
             <div className=" d-flex "> 

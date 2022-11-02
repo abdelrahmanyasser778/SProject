@@ -11,7 +11,7 @@ const RegisterDetails = () => {
     const [phone,setPhone] = useState("");
 
     const REGISTER =()=>{
-        axios.post('https://lms.elingua.co/api/signup', {
+        axios.post('https://qudratqudratooooo.online/api/signup', {
             name,
             email,
             phone,
@@ -20,7 +20,7 @@ const RegisterDetails = () => {
           })
           .then(function (response) {
             console.log(response);
-            window.location.replace("http://localhost:3000/login");
+            // window.location.replace("http://localhost:3000/login");
           })
           .catch(function (error) {
             console.log("error bad credentials");

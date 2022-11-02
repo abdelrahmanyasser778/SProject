@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
-const CartCheckout = () => {
+const CartCheckout = ({total}) => {
     return (
         <Row className="my-1 d-flex justify-content-center cart-checkout pt-3">
             <Col xs="12" className="d-flex  flex-column  ">
@@ -13,7 +13,7 @@ const CartCheckout = () => {
                     />
                     <button className="copon-btn d-inline " style={{backgroundColor:"#099B93"}}>تطبيق</button>
                 </div>
-                <div className="product-price d-inline w-100 my-3  border">800 جنية</div>
+                <div className="product-price d-inline w-100 my-3  border">{total} ريال</div>
                 <Link
                     to="/confirmdata"
                     style={{ textDecoration: "none" }}
