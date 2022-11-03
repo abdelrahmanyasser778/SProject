@@ -4,8 +4,33 @@ import { Col,Card,Row } from 'react-bootstrap'
 import prod1 from '../../images/download.jpg'
 import deleteicon from '../../images/delete.png'
 import man from '../../images/man.jpeg'
+import { useState } from 'react'
+import axios from "axios";
 const OwnerAllStudentCard = ({name ,email ,phone ,image , location}) => {
+    const [newpass,setnewpass] = useState("");
+    const [oldpassword,setoldpassword] = useState("");
+    const token =localStorage.getItem("ACCESS_TOKEN")
+  const config = {
+    headers: {
+        "Content-type": "application/json",
+         "Authorization": `Bearer ${token}`,
+    },
+};
     
+    const submit =()=>{
+        axios.post('https://qudratqudratooooo.online/api/change-password', {
+            old_password:oldpassword,
+            new_password:newpass,
+            confirm_password:newpass
+          },config)
+          .then(function (response) {
+            
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+        
+    }
   return (
     <div>
             <div className=" d-flex "> 
@@ -55,18 +80,22 @@ const OwnerAllStudentCard = ({name ,email ,phone ,image , location}) => {
                             type="password"
                             className="input-form d-block mt-1 px-3"
                             placeholder="ادخل كلمة المرور القديمة"
+                            onChange={(e)=>{setoldpassword(e.target.value)}}
+                            value={oldpassword}
                         />
                         <input
                             type="password"
                             className="input-form d-block mt-3 px-3"
                             placeholder="ادخل كلمة المرور الجديده"
+                            onChange={(e)=>{setnewpass(e.target.value)}}
+                            value={newpass}
                         />
                     </Col>
                 </Row>
 
                 <Row>
                     <Col xs="10" sm="8" md="6" className="d-flex justify-content-end ">
-                        <button className="btn-save d-inline mt-2 ">حفظ كلمة السر</button>
+                        <button onClick={submit} className="btn-save d-inline mt-2 ">حفظ كلمة السر</button>
                     </Col>
                 </Row>
             </div>
