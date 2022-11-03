@@ -40,6 +40,8 @@ import StudentPrevPayPage from "./Pages/Student/StudentPrevPayPage";
 import MangerNumberOfStudentsPage from "./Pages/Manger/MangerNumberOfStudentsPage";
 import MangerNumberOfTeachersPage from "./Pages/Manger/MangerNumberOfTeachersPage";
 import MangerAcceptCoursePage from "./Pages/Manger/MangerAcceptCoursePage";
+import StudentAllQuizesPage from "./Pages/Student/StudentAllQuizesPage";
+import StudentQuizPage from "./Pages/Student/StudentQuizPage";
 function App() {
   let { id } = useParams();
   return (
@@ -79,6 +81,8 @@ function App() {
         <Route path="/manger/allstudents" element={<MangerNumberOfStudentsPage/>}/>
         <Route path="/manger/allteachers" element ={<MangerNumberOfTeachersPage/>}/>
         <Route path="/manger/acceptcourse" element={<MangerAcceptCoursePage/>}/>
+        <Route path="/student/quizes" element={<StudentAllQuizesPage/>}/>
+        <Route path="/quiz" element={<StudentQuizPage/>}/>
           </Routes>
        </BrowserRouter>
        

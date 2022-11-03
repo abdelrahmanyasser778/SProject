@@ -21,7 +21,8 @@ const OwnerAllData = () => {
   
   return (
     <div >
-    <div className='admin-content-text mb-5' style={{color:"#099B93"}}> جميع الدورات</div>
+    <div className='admin-content-text mb-3' style={{color:"#099B93"}}> جميع الدورات</div>
+    <input  type="text" className='form-control mb-2' placeholder='ابحث..'/>
     <Row className=' justify-content-start'>
       {data.map((element)=>{
         return <OwnerAllCoursesCard img={`https://qudratqudratooooo.online/${element.thumbnail}`} name={element.title["en"]} price={element.price} key={element.id} id={element.id} />

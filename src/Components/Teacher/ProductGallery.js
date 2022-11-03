@@ -10,10 +10,10 @@ const ProductGallery = ({img}) => {
             original: `https://qudratqudratooooo.online/${img}`,
         },
         {
-            original: `${Course}`,
+            original:  `https://qudratqudratooooo.online/${img}`,
         },
         {
-            original: `${Course}`,
+            original:  `https://qudratqudratooooo.online/${img}`,
         },
     ];
     return (

@@ -19,6 +19,11 @@ const OwnerSideBar = () => {
                     </div>
         </Link>
 
+        <Link to="/student/quizes" style={{ textDecoration: 'none' }}>
+                    <div className="admin-side-text my-1 border-bottom p-2 mx-auto text-center">
+                          الاختبارات
+                    </div>
+        </Link>
 
 
         <Link to="/student/boughtcourses" style={{ textDecoration: 'none' }}>
@@ -31,6 +36,7 @@ const OwnerSideBar = () => {
                     <div className="admin-side-text my-1 border-bottom p-2 mx-auto text-center">
                          المشتريات السابقة  
                     </div>
+
         </Link>
 
     

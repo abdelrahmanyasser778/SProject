@@ -20,8 +20,14 @@ const MangerNumberOfStudentsCard = () => {
            
             <Card.Body>
                 <Card.Title>
+                <div className='d-flex justify-content-between mb-1'>
+                    <div style={{color:"#fff"}}>تعديل</div>
+                    <div style={{color:"#fff"}}>ازالة</div>
+                    
+                </div>
+                
                 <div className='d-flex'>
-
+                
                     <div className="card-title"  style={{color:"#fff"}}>
                      اسم الطالب : {" "}
                     </div>
