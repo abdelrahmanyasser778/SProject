@@ -3,6 +3,7 @@ import { Row } from 'react-bootstrap'
 import MangerNumberOfStudentsCard from './MangerNumberOfStudentsCard'
 
 const MangerNumberOfStudents = () => {
+  
   return (
     <div>
      <div className='admin-content-text mb-3' style={{color:"#099B93"}}>  اجمالي عدد الطلاب : 300 طالب</div>
