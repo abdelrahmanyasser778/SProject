@@ -28,8 +28,9 @@ const token = localStorage.getItem("ACCESS_TOKEN")
   },[])
 
 const deleteItem = (id) =>{
+    console.log(id)
     let temparr = data.filter((element)=>{
-        return element.course.id != id;
+        return element.id != id;
     })
 
     setData(temparr);
@@ -44,7 +45,7 @@ const deleteItem = (id) =>{
                 <Col xs="12" md="9">
                    {data && data.map((item)=>{ 
                     total_cost +=item.course.price
-                    return (<CartItem title={item.course.title.en} shortdetails={item.course.slug} about={item.course.about.en} price={item.course.price} id={item.id} thumbnail={`https://qudratqudratooooo.online/${item.course.thumbnail}`} delfunc={deleteItem}/>)
+                    return (<CartItem title={item.course.title.en} shortdetails={item.course.slug} about={item.course.about.en} price={item.course.price} key={item.course.id} id={item.id} thumbnail={`https://qudratqudratooooo.online/${item.course.thumbnail}`} delfunc={deleteItem}/>)
                    })}
                     
                 </Col>

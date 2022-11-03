@@ -13,10 +13,14 @@ const CartItem = ({title,shortdesc,about, price ,id , thumbnail ,delfunc}) => {
   const config = {
   headers: { Authorization: `Bearer ${token}` }
 };
-    console.log(id)
+   
     axios.get(`https://qudratqudratooooo.online/api/remove-to-cart/${id}`,config)
     .then(function (response) {
-      console.log(response)
+      console.log(response.data.success)
+      if(response.data.success==true){
+        console.log("workin")
+        delfunc(id)
+      }
     })
     .catch(function (error) {
       console.log(error)

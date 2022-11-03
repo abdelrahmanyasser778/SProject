@@ -4,7 +4,7 @@ import { Col,Card,Row } from 'react-bootstrap'
 import prod1 from '../../images/download.jpg'
 import deleteicon from '../../images/delete.png'
 import man from '../../images/man.jpeg'
-const OwnerAllStudentCard = () => {
+const OwnerAllStudentCard = ({name ,email ,phone ,image , location}) => {
     
   return (
     <div>
@@ -16,7 +16,7 @@ const OwnerAllStudentCard = () => {
                 <Row className="d-flex justify-content-between pt-2">
                     <Col xs="6" className="d-flex">
                         <div className="p-2">الاسم:</div>
-                        <div className="p-1 item-delete-edit">احمد عبداللة</div>
+                        <div className="p-1 item-delete-edit">{name}</div>
                      
                     </Col>
                     <Col xs="6" className="d-flex justify-content-end">
@@ -33,19 +33,19 @@ const OwnerAllStudentCard = () => {
                 <Row className="">
                     <Col xs="12" className="d-flex">
                         <div className="p-2">رقم الهاتف:</div>
-                        <div className="p-1 item-delete-edit">0122314324</div>
+                        <div className="p-1 item-delete-edit">{phone}</div>
                     </Col>
                 </Row>
                 <Row className="">
                     <Col xs="12" className="d-flex">
                         <div className="p-2">الايميل:</div>
-                        <div className="p-1 item-delete-edit">ahmed@gmail.com</div>
+                        <div className="p-1 item-delete-edit">{email}</div>
                     </Col>
                 </Row>
                 <Row className="">
                     <Col xs="12" className="d-flex">
                         <div className="p-2">العنوان :</div>
-                        <div className="p-1 item-delete-edit">الرياض</div>
+                        <div className="p-1 item-delete-edit">{location}</div>
                     </Col>
                 </Row>
                 <Row className="mt-5">

@@ -11,15 +11,14 @@ const OwnerAllStudentsPage = () => {
         "Content-type": "application/json",
          "Authorization": `Bearer ${token}`,
     },
-};    
+};
 
   const [data , setData] = useState([]);
   useEffect(()=>{
-    console.log(config)
-    axios.get('https://qudratqudratooooo.online/api/user',{},config)
+    axios.get('https://qudratqudratooooo.online/api/user',config)
     .then(function (response) {
       setData(response.data.data)
-      console.log(response)
+      console.log(response.data.data)
     })
     .catch(function (error) {
       console.log(error);
@@ -38,7 +37,7 @@ const OwnerAllStudentsPage = () => {
                 </Col>
 
                 <Col sm="9" xs="10" md="10">
-                    <OwnerAllStudents/>
+                    <OwnerAllStudents name={data.name} email={data.email} phone={data.phone} image={data.image} location={data.location}/>
                 </Col>
             </Row>
         </Container>
